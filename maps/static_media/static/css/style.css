@@ -21,3 +21,19 @@
 	vertical-align: top;
 
 }
+
+#data{
+	text-align: left;
+	overflow: auto;
+}
+
+#data ul li{
+	list-style: none;
+	font-family: Helvetica,Arial;
+
+}
+
+#data ul li small{
+	color:gray;
+}
+

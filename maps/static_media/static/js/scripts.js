@@ -48,4 +48,17 @@ $(function(){
      	$('#id_lng').val(markerCoords.lng() );
      }
 
+     $('#form_coords').submit(function(e){
+       e.preventDefault();
+
+	       $.post('/coords/save/', $(this).serialize(), function(data){
+	 			if (data.ok) {
+                    $('#data').html(data.msg);
+	 			}else{
+	 				alert(data.msg);
+	 			}
+	       }, 'json');
+
+     });
+
 });

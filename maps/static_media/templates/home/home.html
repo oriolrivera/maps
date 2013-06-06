@@ -8,7 +8,7 @@
 
         <div id="datos" class="capas">
 			<div id="form">
-				<form action="" method="post">
+				<form action="/coords/save/" method="post" id="form_coords">
 					{% csrf_token %}
 					{{ form.as_p }}
 					<p>
@@ -18,7 +18,11 @@
 
 			</div>
 			<div id="data">
-
+				<ul>
+					{% for ubicacion in ubicaciones %}
+						<li>{{ ubicacion.nombre }} {{ ubicacion.user }} <small>- hace {{ ubicacion.fecha|timesince }}</small>  </li>
+					{% endfor %}
+				</ul>
 			</div>
         </div>
 {% endblock %}

@@ -8,4 +8,6 @@
 	<hr>
 	<li>Integración de ModelForm</li>
 	<li>Sincronización de market segun se arrastre en el mapa mostrando lat y lng en form</li>
+	<hr>
+	<li>Creando ubicación y mostrando en pantalla</li>
 </ul>
