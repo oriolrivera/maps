@@ -1,0 +1,16 @@
+.container{
+	border: 1px solid #ddd;
+	height: 500px;
+	margin: 0 auto;
+	text-align: center;
+	width: 960px;
+}
+
+.capas{
+	width: 45%;
+	height: 450px;
+	border:1px solid #ccc;
+	display: inline-block;
+	vertical-align: top;
+
+}

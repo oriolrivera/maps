@@ -3,4 +3,6 @@
 
 <ul>
 	<li>Integrando el home</li>
+	<hr>
+	<li>Cargando api de google maps</li>
 </ul>
