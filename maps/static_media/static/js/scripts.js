@@ -28,6 +28,24 @@ $(function(){
 
      	map = new google.maps.Map($('#mapa').get(0), mapSettings);
 
+     	var marker = new google.maps.Marker({
+   			position: latlng,
+   			map: map,
+   			draggable: true,
+   			title: 'Arrastrame :)'
+     	});
+
+     	google.maps.event.addListener(marker, 'position_changed', function(){
+     		getMarkerCoords(marker);
+     	});
+
+     }//end initialize
+
+     function getMarkerCoords(marker){
+     	var markerCoords = marker.getPosition();
+     	//console.log(markerCoords.lat()+' '+markerCoords.lng());
+     	$('#id_lat').val(markerCoords.lat() );
+     	$('#id_lng').val(markerCoords.lng() );
      }
 
 });

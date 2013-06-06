@@ -4,10 +4,21 @@
 
 {% block content %}
         {# <h1>App google maps</h1> #}
-        <div id="mapa" class="capas">
+        <div id="mapa" class="capas"></div>
 
-        </div>
         <div id="datos" class="capas">
+			<div id="form">
+				<form action="" method="post">
+					{% csrf_token %}
+					{{ form.as_p }}
+					<p>
+						<input type="submit" value="Guardar ubicacion">
+					</p>
+				</form>
 
+			</div>
+			<div id="data">
+
+			</div>
         </div>
 {% endblock %}
